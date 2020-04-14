@@ -1,0 +1,240 @@
+    @keyframes blend {
+        0% {
+            background-color: #363636;
+        }
+        25% {
+            background-color: #880c0c;
+        }
+        50% {
+            background-color: #880c0c;
+        }
+        100% {
+            background-color: #363636;
+        }
+    }
+    
+    @keyframes move {
+        from {
+            width: 15;
+        }
+        to {
+            width: 2700;
+        }
+    }
+    
+    @keyframes moveultra {
+        0% {
+            width: 15;
+            height: 15;
+        }
+        25% {
+            width: 75;
+            height: 5;
+        }
+        50% {
+            width: 19;
+            height: 120;
+        }
+        75% {
+            width: 61;
+            height: 59;
+        }
+        100% {
+            width: 130;
+            height: 18;
+        }
+    }
+    
+    @-webkit-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    h1 {
+        color: whitesmoke;
+        background-color: #363636;
+        border: 3px solid #0093f5;
+        /*  animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse; */
+    }
+    
+    h4 {
+        animation-name: fadeInLeft;
+        animation-duration: 8;
+        animation-iteration-count: initial;
+        -webkit-animation-name: fadeInLeft;
+        -webkit-animation-duration: 8;
+        -webkit-animation-iteration-count: initial;
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background-color: #363636;
+    }
+    
+    h2 {
+        color: magenta;
+        background-image: url(https://vignette.wikia.nocookie.net/dziadopedia/images/d/d4/Dziad_ufolud.png/revision/latest?cb=20190505203535&path-prefix=pl);
+    }
+    
+    p {
+        color: red;
+    }
+    
+    #minimaro {
+        border: 4px solid rgb(196, 13, 13);
+        padding: 7px;
+        margin: 20px;
+        border-radius: 15px 50px 30px;
+        padding: 20px;
+        background-color: #363636;
+        width: 200px;
+        height: 150px;
+        animation-name: blend;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        box-shadow: 0px 0px 35px #b89595;
+    }
+    
+    h3 {
+        color: rgb(255, 200, 243);
+    }
+    
+    #wino {
+        font-size: x-small;
+    }
+    
+    #woda {
+        background-image: url(https://vignette.wikia.nocookie.net/dziadopedia/images/d/d4/Dziad_ufolud.png/revision/latest?cb=20190505203535&path-prefix=pl);
+        opacity: 0.4;
+        border-radius: 15px 50px 30px 5px;
+        padding: 20px;
+        width: 300px;
+        height: 450px;
+        position: absolute;
+        cursor: move;
+        /* transition: all .3s linear; */
+    }
+    
+    #woda:hover {
+        transform: scale(1.2);
+        transition: all .3s ease-in;
+    }
+    
+    #maro1 {
+        color: black;
+        font-size: 15;
+        /*  animation-name: moveultra;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; */
+    }
+    
+    #maro {
+        border-radius: 40px 40px 40px 40px;
+        padding: 30px;
+        border-color: crimson;
+        border-width: 10;
+        background-color: rgb(255, 255, 255);
+        /*   animation-name: moveultra;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; */
+    }
+    
+    #zimnawoda {
+        height: 30px;
+        width: 30px;
+        border-color: lawngreen;
+        border-width: 5;
+        background-color: lawngreen;
+        display: none;
+    }
+    
+    a:hover circle {
+        fill: #00B2FF;
+    }
+    
+    ;
+    #woda:hover {
+        opacity: 1;
+    }
+    /*  #shadowBox {
+        background-color: rgb(0, 0, 0);
+
+        background-color: rgba(0, 0, 0, 0.2);
+  
+        border: 3px solid;
+    } */
+    
+    .rainbow {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 32px;
+        font-family: monospace;
+        letter-spacing: 5px;
+    }
+    
+    .rainbow_text_animated {
+        background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 6s ease-in-out infinite, rotation 4s linear infinite;
+        background-size: 400% 100%;
+    }
+    
+    @keyframes rainbow_animation {
+        0%,
+        100% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 100% 0;
+        }
+    }
+    
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(90deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        75% {
+            transform: rotate(260deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    #discord {
+        width: 350;
+        height: 500;
+    }
