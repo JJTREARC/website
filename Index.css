@@ -198,7 +198,7 @@
     }
     
     .rainbow_text_animated {
-        background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        background: radial-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
