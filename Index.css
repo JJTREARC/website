@@ -165,6 +165,8 @@
     }
     
     #zimnawoda {
+        background-position-x: 200;
+        background-position-y: 400;
         height: 30px;
         width: 30px;
         border-color: lawngreen;
